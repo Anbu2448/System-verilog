@@ -7,17 +7,17 @@ module class_examples;
     tr1=new();
     tr1.data=5;
     tr2=tr1;
-    $display("tr1.data=%0d",tr1.data);
-    $display("tr2.data=%0d",tr2.data);
+    $display("tr1.data=%0h",tr1.data);
+    $display("tr2.data=%0h",tr2.data);
     
     tr2.data=10;
-    $display("tr2.data=%0d",tr2.data);
-    $display("tr1.data=%0d",tr1.data);
+    $display("tr2.data=%0h",tr2.data);
+    $display("tr1.data=%0h",tr1.data);
   end
 endmodule
 
 //output
 # tr1.data=5
 # tr2.data=5
-# tr2.data=10
-# tr1.data=10
+# tr2.data=a
+# tr1.data=a
